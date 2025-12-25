@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sen Bir Mucizesin</title>
+  <style>
+    body {
+      font-family: 'Georgia', serif;
+      background-color: #f9f4ed;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 30px;
+      margin: 0;
+      color: #333;
+    }
+
+    .player-button {
+      background-color: #e74c3c;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      font-size: 18px;
+      border-radius: 30px;
+      cursor: pointer;
+      margin-bottom: 30px;
+      transition: background-color 0.3s;
+    }
+
+    .player-button:hover {
+      background-color: #c0392b;
+    }
+
+    .poem-container {
+      background: linear-gradient(135deg, #ffd1dc, #ff9eb1);
+      padding: 30px;
+      border-radius: 20px;
+      max-width: 600px;
+      text-align: center;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+      position: relative;
+    }
+
+    .poem-container::before {
+      content: "❤";
+      position: absolute;
+      top: -25px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 40px;
+      color: #e74c3c;
+    }
+
+    .poem {
+      font-size: 18px;
+      line-height: 1.8;
+      white-space: pre-line;
+    }
+
+    .signature {
+      margin-top: 20px;
+      font-style: italic;
+      font-size: 16px;
+    }
+
+    @media (max-width: 650px) {
+      .poem-container {
+        padding: 20px;
+      }
+      .poem {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <button class="player-button" onclick="playSong()">
+    🎶 Şarkıyı Dinle ve İzle
+  </button>
+
+  <div class="poem-container">
+    <div class="poem">
+SEN BİR MÜCİZESİN
+
+Çölde uzaktan kopup gelen bir esinti gibi 
+Hayatımın en güzel, en gerçek hikâyesi 
+Hayat yolumu aydınlatan olağanüstü kadın 
+Ruhuma huzur üflüyor bana her bakışın 
+
+Canımın günü günün kutlu olsun 
+Yaşamının her günü bayram olsun 
+
+Sabahımın parlak güneşi, ilk şuâsı 
+Kalp atışlarımın değişmeyen duâsı 
+Dalgaların kayalara fısıldadığı şarkının 
+Gözlerimi açınca içinde sen uyanırsın
+
+Konuştuğunda yıldızlar seni dinler gökyüzünde  
+Ne desem az gelir… Sen bir mucizesin bende 
+
+Hatırlar mısın Kadıköy’ü, buluştuğumuz iskeleyi  
+O yaz akşamında birleşen kaderimizi  
+Martıların şahitliğinde tanışan seslerimizi  
+Hatırlar mısın seni sessizce izleyişimi  
+
+Canımın içi doğum günün kutlu olsun  
+Yaşamının her günü bayram olsun
+
+                  26.12.2025         Namık Sabırlı
+    </div>
+    <div class="signature"></div>
+  </div>
+
+  <script>
+    function playSong() {
+      // Lütfen aşağıdaki URL'yi kendi GitHub raw bağlantınızla değiştirin
+      const videoUrl = "https://namiksabirli-png.github.io/ozel_klip/son_d_gunu_26_aralik_ssnn.mp4";
+      window.open(videoUrl, '_blank');
+    }
+  </script>
+
+</body>
+</html>
